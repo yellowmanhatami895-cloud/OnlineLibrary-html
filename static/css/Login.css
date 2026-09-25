@@ -1,0 +1,173 @@
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("../img/A1wHItllbpytnQeGZmJNgWdpicv5shLPfRFhwYyPU2LuVYwSFIMXuAy5JYsZf16vr0JXeE4ErXv4GP4_L8uflKZlODY93JNULq2u68exQ7EcBgbtbTQWh9swQUNAQPVUUSXRaF4RX_L4uBH3_42s7pSyeS0YRbEkKtab2THVmhba7h0tafBStF2N3rfVSQCZ.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Georgia, serif;
+}
+
+
+/* Login Box */
+
+.cart {
+    width: 380px;
+    min-height: 430px;
+
+    padding: 35px;
+
+    background: rgba(45, 28, 15, 0.82);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(218, 180, 100, 0.45);
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.6),
+        inset 0 0 20px rgba(255, 210, 120, 0.05);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 12px;
+
+    color: #f1dfb5;
+}
+
+
+/* Text */
+
+.item {
+    color: #f1dfb5;
+}
+
+
+/* Labels */
+
+label.item {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+
+/* Inputs */
+
+input.item {
+    height: 42px;
+
+    padding: 0 12px;
+
+    box-sizing: border-box;
+
+    background: rgba(20, 12, 6, 0.65);
+
+    border: 1px solid rgba(218, 180, 100, 0.4);
+    border-radius: 8px;
+
+    color: #fff4d6;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s,
+        box-shadow 0.25s;
+}
+
+
+/* Input focus */
+
+input.item:focus {
+    border-color: #d8ad5c;
+
+    box-shadow:
+        0 0 8px rgba(216, 173, 92, 0.35);
+}
+
+
+/* Login Button */
+
+button.item {
+    height: 45px;
+
+    margin-top: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #8b642f,
+        #c69a52
+    );
+
+    border: none;
+    border-radius: 8px;
+
+    color: #fff7df;
+
+    font-size: 16px;
+    font-family: Georgia, serif;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s,
+        background 0.2s;
+}
+
+
+/* Button Hover */
+
+button.item:hover {
+    background: linear-gradient(
+        135deg,
+        #a87936,
+        #d8ad5c
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Create Account */
+
+a {
+    margin-top: 12px;
+
+    text-align: center;
+
+    color: #d8ad5c;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: color 0.2s;
+}
+
+
+a:hover {
+    color: #f3d28b;
+
+    text-decoration: underline;
+}
+

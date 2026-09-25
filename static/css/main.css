@@ -1,0 +1,220 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("../img/MKAliRw4MZxKIrIxY7-8WUiSewQbFsuZJY1m0caNJ609MGFG9y1bKHxVYNcFW_wp2ChlILm9wA4hV_bO1WGkbSZkg_CGG7jluWLa4IQakwxusLnfnRYGVnelsr0kwnVnH90JlmCfhXADyeEVeUEjlEQPjDkY-LHg8VMzUm-oGGWh0SD1QJTO7zaCUuVyj6WR.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    left: 50%;
+    position: fixed;
+    z-index: 1;
+
+    height: 5%;
+    width: 97%;
+    padding: 10px;
+
+    background-color: rgba(45, 28, 15, 0.75);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    color: #f1dfb5;
+
+    display: flex;
+    justify-content:right;
+
+    border: 1px solid rgba(220, 180, 100, 0.25);
+    border-radius: 10px;
+
+    transform: translateX(-50%) translateY(-130%);
+    transition: transform 0.4s ease;
+}
+
+.logo {
+    background-color: transparent;
+    color: #f1dfb5;
+}
+
+
+/* ================= NAVBAR MOUSE AREA ================= */
+
+.mouse-area {
+    position: fixed;
+    z-index: 2;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 50px;
+}
+
+.mouse-area:hover + .navbar {
+    transform: translateX(-50%) translateY(0);
+}
+
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+
+    position: fixed;
+    z-index: 50;
+
+    height: 97%;
+    width: 7%;
+    padding: 5px;
+    margin: 5px;
+
+    background-color: rgba(45, 28, 15, 0.75);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    color: #f1dfb5;
+
+    display: flex;
+
+    border: 1px solid rgba(220, 180, 100, 0.25);
+    border-radius: 10px;
+    flex-direction: column;
+    transform: translateX(-120%);
+    transition: transform 0.4s ease;
+}
+.sidebar button {
+    z-index: 50;
+    display: block;
+    background-color: rgba(45, 28, 15, 0.75);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    color: #f1dfb5;
+    border-radius: 5px;
+    border: 1px solid rgba(220, 180, 100, 0.25);
+    cursor:pointer;
+    height: 10%;
+}
+.downButton { 
+    margin-top: auto;
+}
+.sidebar button:hover {
+    background-color: rgba(80, 50, 25, 0.9) !important;
+}
+/* ================= SIDEBAR MOUSE AREA ================= */
+
+.mouse-area-side {
+    position: fixed;
+    z-index: 1;
+    
+    top: 0;
+    left: 0;
+  
+    height: 97%;
+    width: 10%;
+}
+.mouse-area-side:hover + .sidebar,
+.sidebar:hover {
+    transform: translateX(0) translateY(0);
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+
+    height: 5%;
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    background-color: rgba(45, 28, 15, 0.75);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    color: #f1dfb5;
+
+    display: flex;
+    justify-content: center;
+
+    border: 1px solid rgba(220, 180, 100, 0.25);
+    border-radius: 10px;
+
+    left: 50%;
+
+    transform: translateX(-50%) translateY(150%);
+    transition: transform 0.4s ease;
+}
+
+
+/* ================= FOOTER MOUSE AREA ================= */
+
+.mouse-area-footer {
+    position: fixed;
+    z-index: 5;
+
+    bottom: 0;
+    left: 50%;
+
+    width: 97%;
+    height: 5%;
+
+    transform: translateX(-50%);
+}
+
+.mouse-area-footer:hover + .footer {
+    transform: translateX(-50%) translateY(0);
+}
+
+
+/* ================= CONTENT ================= */
+
+.content {
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    position: fixed;
+
+    transition:
+        top 0.3s,
+        bottom 0.3s,
+        left 0.3s;
+}
+
+/* ================= IFRAME ================= */
+
+.content iframe {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    border-radius: 25px;
+}
+
+
+/* ================= CONTENT MOVEMENT ================= */
+
+.mouse-area-footer:hover + .footer ~ .content {
+    bottom: 10%;
+}
+
+.mouse-area-side:hover + .sidebar ~ .content {
+    left: 10%;
+}
+
+.mouse-area:hover + .navbar ~ .content {
+    top: 10%;
+}
