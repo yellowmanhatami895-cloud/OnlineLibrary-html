@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class = "mouse-area">
+
+    </div>
+    <nav class = "navbar"> 
+        <p id="username">{{.}}</p>
+        <div class ="logo">
+            <p>🙍‍♂️</p>
+        </div>
+    </nav>
+    <div class="mouse-area-side"></div>
+    <div class="sidebar">
+        <form action="/HomePanel" method="GET">        
+            <button> 🏠 Home  </button>
+        </form>
+        <form action="/BookPanel" method="GET">
+            <button> 📚 Books </button>
+        </form>
+        <form action="/CartPanel" method="GET">
+            <button> 🛒 Cart  </button>
+        </form>
+        <form action="/OrdersPanel" method="GET">
+            <button> 📦 Orders </button>
+        </form>
+        <form action="/SettingPanel" method="GET">
+            <button class="downButton"> ⚙ Settings </button>
+        </form>
+        <form action="/LogOut" method="GET">
+            <button > 🚪 Logout</button>
+       </form>
+    </div>
+
+
+    <div class="mouse-area-footer"></div>
+    <footer class="footer">
+        <div>
+            <p>footer</p>
+        </div>
+    </footer>
+    <div class="content">
+        <iframe name="content-frame" src="/html/noContent.html"></iframe>
+    </div>
+
+</body>
+</html>

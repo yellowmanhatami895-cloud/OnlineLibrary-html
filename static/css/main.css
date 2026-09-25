@@ -12,7 +12,14 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+a {
+    color: #f1dfb5;
+    text-decoration: none;
+}
 
+a:hover {
+    text-decoration: none;
+}
 
 /* ================= NAVBAR ================= */
 
@@ -93,7 +100,7 @@ body {
     transition: transform 0.4s ease;
 }
 
-.sidebar button {
+.sidebar button  {
     z-index: 50;
 
     display: block;
