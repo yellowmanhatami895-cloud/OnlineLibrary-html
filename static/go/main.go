@@ -37,7 +37,6 @@ func main() {
 	http.ListenAndServe(":8000", nil)
 }
 func login(w http.ResponseWriter, r *http.Request) {
-
 	if r.Method == http.MethodPost {
 
 		id := r.FormValue("id")
@@ -58,9 +57,22 @@ func login(w http.ResponseWriter, r *http.Request) {
 				return
 			}
 			template.Execute(w, userName)
+
+			return
+		} else {
+			template, err := template.ParseFiles("../html/Login.html")
+			if err != nil {
+				fmt.Println(err)
+				return
+			}
+			template.Execute(w, "Wrong user id or password")
 			return
 		}
 	}
-
-	http.ServeFile(w, r, "../html/Login.html")
+	template, err := template.ParseFiles("../html/Login.html")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	template.Execute(w, "")
 }

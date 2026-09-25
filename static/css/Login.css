@@ -58,7 +58,10 @@ body {
 .item {
     color: #f1dfb5;
 }
+.err {
+    color: brown;
 
+}
 
 /* Labels */
 
