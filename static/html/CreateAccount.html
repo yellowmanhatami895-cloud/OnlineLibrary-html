@@ -5,15 +5,20 @@
     <link rel="stylesheet" href="../css/Login.css">
 </head>
 <body>
+    
     <div class="cart">
-    <label for="" class="item">Enter Username</label>
-    <input type="text" class="item">
-    <label for="" class="item">Enter password</label>
-    <input type="text" class="item"> 
-    <label for="" class="item">Enter password</label>
-    <input type="text" class="item">
-    <button class="item">Submit</button>
-    <a href="Login.html" class="item">Login</a>
+    <form action="/Login" method = "POST">
+        <label for="" class="item">Enter Username</label>
+        <input type="text" class="item" name ="username">
+        <label for="" class="item">Enter password</label>
+        <input type="text" class="item" name = "password"> 
+        <label for="" class="item">Enter password</label>
+        <input type="text" class="item" name = "password2">
+        <label for="" class="item">Enter email</label>
+        <input type="text" class="item" name = "email">
+        <button class="item" type="submit">Submit</button>
+        <a href="Login.html" class="item">Login</a>
+    </form>
     </div>
 </body>
 </html>

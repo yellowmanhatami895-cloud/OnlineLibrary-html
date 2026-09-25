@@ -2,19 +2,23 @@
 <html lang="en">
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="../css/Login.css">
+    <link rel="stylesheet" href="/css/Login.css">
 
 </head>
 <body>
+    <form action="/Login" method = "POST">
     <div class="cart">
-    <label for="" class="item">Enter Username</label>
-    <input type="text" class="item">
+    <label for="" class="item">Enter User id</label>
+    <input type="text" class="item" name = "id">
     
     <label for="" class="item">Enter password</label>
-    <input type="text" class="item">
-    <button class="item">Login</button>
+    <input type="text" class="item" name = "password">
+    <button class="item" type="submit">Login</button>
 
     <a href="createAccount.html">Create account</a>
+    
+
     </div>
+    </form>
 </body>
 </html>
